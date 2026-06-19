@@ -1,0 +1,52 @@
+[
+  {
+    "feature": "revolving_utilization",
+    "display_name": "Credit Utilization",
+    "importance": 0.844717
+  },
+  {
+    "feature": "times_30_59_days_late",
+    "display_name": "30-59 Day Late Payments",
+    "importance": 0.391055
+  },
+  {
+    "feature": "times_90_days_late",
+    "display_name": "90+ Day Late Payments",
+    "importance": 0.335275
+  },
+  {
+    "feature": "age",
+    "display_name": "Applicant Age",
+    "importance": 0.239527
+  },
+  {
+    "feature": "open_credit_lines",
+    "display_name": "Open Credit Lines",
+    "importance": 0.17691
+  },
+  {
+    "feature": "times_60_89_days_late",
+    "display_name": "60-89 Day Late Payments",
+    "importance": 0.171197
+  },
+  {
+    "feature": "debt_ratio",
+    "display_name": "Debt Ratio",
+    "importance": 0.149654
+  },
+  {
+    "feature": "real_estate_loans",
+    "display_name": "Real Estate Loans",
+    "importance": 0.121859
+  },
+  {
+    "feature": "monthly_income",
+    "display_name": "Monthly Income",
+    "importance": 0.113151
+  },
+  {
+    "feature": "dependents",
+    "display_name": "Number of Dependents",
+    "importance": 0.034216
+  }
+]

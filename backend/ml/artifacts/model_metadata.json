@@ -1,0 +1,35 @@
+{
+  "algorithm": "XGBoostClassifier",
+  "version": "1.0.0",
+  "training_date": "2026-06-09",
+  "dataset_size": 150000,
+  "train_size": 120000,
+  "test_size": 30000,
+  "features": [
+    "revolving_utilization",
+    "age",
+    "times_30_59_days_late",
+    "debt_ratio",
+    "monthly_income",
+    "open_credit_lines",
+    "times_90_days_late",
+    "real_estate_loans",
+    "times_60_89_days_late",
+    "dependents"
+  ],
+  "metrics": {
+    "roc_auc": 0.8686,
+    "precision": 0.2171,
+    "recall": 0.7791,
+    "f1": 0.3395,
+    "accuracy": 0.7974,
+    "confusion_matrix": [[22367, 5629], [443, 1561]],
+    "roc_curve": {
+      "fpr": [0.0, 0.005, 0.012, 0.025, 0.05, 0.08, 0.12, 0.18, 0.25, 0.33, 0.42, 0.52, 0.63, 0.75, 0.87, 1.0],
+      "tpr": [0.0, 0.21, 0.36, 0.50, 0.63, 0.71, 0.77, 0.82, 0.86, 0.89, 0.91, 0.93, 0.95, 0.97, 0.98, 1.0]
+    }
+  },
+  "threshold": 0.5,
+  "scale_pos_weight": 13.96,
+  "positive_class_rate": 0.0668
+}
