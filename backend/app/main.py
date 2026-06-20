@@ -57,8 +57,9 @@ async def add_security_headers(request: Request, call_next) -> Response:
     response.headers["X-Frame-Options"] = "DENY"
     response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
     response.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
-    # Remove server version banner
-    response.headers.pop("server", None)
+    # Remove server version banner (MutableHeaders uses del, not pop)
+    if "server" in response.headers:
+        del response.headers["server"]
     return response
 
 
